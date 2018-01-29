@@ -279,5 +279,5 @@ if __name__ == "__main__":
             print(colorama.Fore.RED + "! Question can't be empty")
         else:
             for i, _ in enumerate(answers['scores']):
-                print("{}- {}{}".format(colorama.Fore.GREEN if answers['scores'][i] == 1 else colorama.Fore.YELLOW if answers['scores'][i] == 0 else colorama.Fore.RED, answers['answers'][i], colorama.Fore.RESET))
+                print("{}- {}{} ({})".format(colorama.Fore.GREEN if answers['scores'][i] == 1 else colorama.Fore.YELLOW if answers['scores'][i] == 0 else colorama.Fore.RED, answers['answers'][i], colorama.Fore.RESET, answers['scores'][i]))
 
